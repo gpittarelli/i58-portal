@@ -207,9 +207,9 @@ for="admin-{{$match.ID}}">
 			{{if $info.HighestDPM.Player.Name}}
 			{{$className := index $classMap $class}}
 			<div class="mdl-cell">
-			    <div class="stat-card-{{$class}} mdl-card mdl-shadow--2dp">
-				<div class="mdl-card__title"></div>
-				<div class="mdl-card__supporting-text">
+			  <div class="stat-card-{{$class}} mdl-card mdl-shadow--2dp">
+				  <div class="mdl-card__title"></div>
+				  <div class="mdl-card__supporting-text">
 				    {{if eq $class "medic"}}
 				    <h3 class="stat-card">{{$info.HighestUbersPerDrop.Player.Name}}</h3>
 				    <h3 class="stat-card">{{$info.HighestUbersPerDrop.Stat}}</h3>
@@ -219,16 +219,16 @@ for="admin-{{$match.ID}}">
 				    <h3 class="stat-card">{{$info.HighestDPM.Stat}}</h3>
 				    <h5 class="stat-card"> Highest {{$className}} DPM</h5>
 				    {{end}}
-				</div>
-				<p>
+				  </div>
+				  <p>
 				    <div class="stat-card-{{$class}} mdl-card__actions mdl-card--border">
-					<button class="mdl-button mdl-js-button">
-					    <a href="/stats?class={{$class}}">
-						<p class="stat-card">{{$className}} Stats</p></a>
-					</button>
+					    <button class="mdl-button mdl-js-button">
+					      <a href="/stats?class={{$class}}">
+						      <p class="stat-card">{{$className}} Stats</p></a>
+					    </button>
 				    </div>
-				</p>
-			    </div>
+				  </p>
+			  </div>
 			</div>
 			{{end}}
 			{{end}}
