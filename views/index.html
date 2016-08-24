@@ -5,7 +5,7 @@
   <head>
 	  <meta charset="UTF-8">
 	  <title>i58 TF2 Portal</title>
-	  <style>
+	  <style type="text/css">
       .mdl-layout__content {
         background-position: 50% 30%;
         background-image: url("https://i.imgur.com/j1BXcmz.png");
@@ -224,7 +224,8 @@
                   <div class="stat-card-{{$class}} mdl-card__actions mdl-card--border">
                     <button class="mdl-button mdl-js-button">
                       <a href="/stats?class={{$class}}">
-                        <p class="stat-card">{{$className}} Stats</p></a>
+                        <p class="stat-card">{{$className}} Stats</p>
+                      </a>
                     </button>
                   </div>
                 </p>
@@ -249,7 +250,8 @@
                 <td class="mdl-data-table__cell--non-numeric"><a href="/team?id={{$team.ID}}">{{$team.Name}}</a></td>
                 <td>{{$team.Wins}}</td>
                 <td>{{$team.Losses}}</td>
-                {{end}}
+              </tr>
+              {{end}}
             </tbody>
           </table>
         </section>
